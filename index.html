@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; script-src https://static.cloudflareinsights.com; connect-src https://cloudflareinsights.com">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Curio Island: science and maths labs for kids | GroundLearn</title>
-<meta name="description" content="A 3D island of hands-on science and maths labs for kids aged 4 to 12, in English and Hindi: mix colours, build molecules, wire circuits and more.">
+<meta name="description" content="A 3D island of 57 hands-on science and maths labs for kids aged 4 to 12, in English and Hindi, with Sheru the lion as your guide.">
 <link rel="canonical" href="https://curioisland.groundlearn.com/">
 <meta name="theme-color" content="#1b9fe0">
 <link rel="icon" type="image/svg+xml" href="/img/icon.svg">
@@ -15,13 +15,13 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Curio Island by GroundLearn">
 <meta property="og:title" content="Curio Island: science and maths labs for kids">
-<meta property="og:description" content="More than 40 hands-on labs for ages 4 to 12, in English and Hindi. Coming soon to Google Play.">
+<meta property="og:description" content="57 hands-on labs for ages 4 to 12, in English and Hindi, with Sheru the lion. Coming soon to Google Play.">
 <meta property="og:url" content="https://curioisland.groundlearn.com/">
 <meta property="og:image" content="https://curioisland.groundlearn.com/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="/display.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MobileApplication","name":"Curio Island: Science for Kids","operatingSystem":"Android","applicationCategory":"EducationalApplication","url":"https://curioisland.groundlearn.com/","description":"A 3D island of hands-on science and maths labs for kids aged 4 to 12, in English and Hindi.","inLanguage":["en","hi"],"publisher":{"@type":"Organization","name":"GroundLearn","url":"https://groundlearn.com/"}}
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Curio Island: Science for Kids","operatingSystem":"Android","applicationCategory":"EducationalApplication","url":"https://curioisland.groundlearn.com/","description":"A 3D island of 57 hands-on science and maths labs for kids aged 4 to 12, in English and Hindi, with a lion guide called Sheru.","inLanguage":["en","hi"],"publisher":{"@type":"Organization","name":"GroundLearn","url":"https://groundlearn.com/"}}
 </script>
 <style>
 @font-face{font-family:"Bricolage";src:url(/display.woff2) format("woff2");font-weight:200 800;font-display:swap}
@@ -94,6 +94,15 @@ section.blk{padding:72px 0}
 .band ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
 @media (max-width:900px){.bands{grid-template-columns:1fr}.band .shot img{width:46%}}
 
+/* sheru */
+.sheru{display:grid;grid-template-columns:.7fr 1.3fr;gap:44px;align-items:center}
+.sheru .sh-img img{border-radius:28px;border:6px solid var(--deep);box-shadow:0 24px 50px rgba(10,30,70,.25);max-width:290px;margin:0 auto}
+.sheru h2{font-size:clamp(30px,4.2vw,46px);margin-bottom:12px}
+.tick{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:12px}
+.tick li{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;font-size:16px}
+.tick b{color:var(--ink)}
+@media (max-width:820px){.sheru{grid-template-columns:1fr;gap:24px}.sheru .sh-img img{max-width:240px}}
+
 /* features */
 .feats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .feat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
@@ -104,7 +113,7 @@ section.blk{padding:72px 0}
 /* screenshot strip */
 .strip{display:flex;gap:18px;overflow-x:auto;padding:6px 20px 18px;scroll-snap-type:x mandatory;max-width:1120px;margin:0 auto}
 .strip figure{flex:0 0 200px;margin:0;scroll-snap-align:start}
-.strip img{border-radius:22px;border:6px solid var(--deep);aspect-ratio:1/2;object-fit:cover;object-position:top}
+.strip img{border-radius:22px;border:6px solid var(--deep);aspect-ratio:9/16;object-fit:cover;object-position:top}
 .strip figcaption{font:600 14px/1.35 var(--sans);color:var(--muted);margin-top:10px}
 
 /* families */
@@ -147,6 +156,7 @@ footer p{margin:0 0 8px;max-width:62em}
     <a class="brand" href="/"><img src="/img/icon.png" width="34" height="34" alt="">Curio Island</a>
     <nav class="nav" aria-label="Main">
       <a href="#ages">Ages</a>
+      <a href="#sheru">Meet Sheru</a>
       <a href="#inside">What's inside</a>
       <a href="#families">For parents</a>
       <a href="#faq">Questions</a>
@@ -162,7 +172,7 @@ footer p{margin:0 0 8px;max-width:62em}
       <p class="k" style="color:#fff3c4">Science and maths, by doing</p>
       <h1>Curio Island</h1>
       <p class="by">By GroundLearn</p>
-      <p class="lede">A 3D island of hands-on labs for curious kids. Mix colours, build real molecules, wire circuits, bend light and share ladoos into fractions, learning by playing rather than reading.</p>
+      <p class="lede">A 3D island of hands-on labs for curious kids. Mix colours, build real molecules, wire circuits, bend light, count coins and share ladoos into fractions, with Sheru the lion as your guide. Learning by playing rather than reading.</p>
       <ul class="chips"><li>🎨 Colour</li><li>⚗️ Chemistry</li><li>⚡ Physics</li><li>🔢 Maths</li><li>🌱 Biology</li></ul>
       <div class="btns">
         <a class="btn btn-sun" href="mailto:contactgroundlearn@gmail.com?subject=Tell%20me%20when%20Curio%20Island%20launches">Tell me when it launches</a>
@@ -187,20 +197,37 @@ footer p{margin:0 0 8px;max-width:62em}
         <div class="shot"><img src="/img/3-explorer.webp" width="540" height="1080" alt="An Explorer lab with big picture buttons" loading="lazy"></div>
         <div class="txt"><span class="age">Ages 4–7</span><h3>Explorer</h3>
           <p>Tap, drag and listen. A friendly voice reads every task aloud, in English or Hindi, so no reading is needed.</p>
-          <ul><li>Fizz Kitchen, See-saw Animals, Light the Bulb</li><li>Clocks, sharing, patterns, day and night</li><li>Wrong answers never cost anything</li></ul></div>
+          <ul><li>Fizz Kitchen, See-saw Animals, Light the Bulb</li><li>Clocks, sharing, patterns, day and night</li><li>Hints on every screen, and wrong answers never cost anything</li></ul></div>
       </article>
       <article class="band" style="--c:#6c4fd6">
         <div class="shot"><img src="/img/4-tinkerer.webp" width="540" height="1080" alt="Mirror Maze, a Tinkerer lab" loading="lazy"></div>
         <div class="txt"><span class="age">Ages 7–10</span><h3>Tinkerer</h3>
-          <p>Puzzles that make you think: snap atoms, guide light, cross pea plants and plot pictures on a grid.</p>
-          <ul><li>Atom Snap, Mirror Maze, Pea Crosses</li><li>Ladoo fractions, symmetry, the water cycle</li><li>A worked example in every lab</li></ul></div>
+          <p>Puzzles that make you think: snap atoms, guide light, cross pea plants, name the five senses and make change with coins.</p>
+          <ul><li>Atom Snap, Mirror Maze, Pea Crosses</li><li>New: Five Senses, Plant Parts, Materials, Shape Hunt, Push and Pull, Coins and Change</li><li>A worked example and a hint in every lab</li></ul></div>
       </article>
       <article class="band" style="--c:#1f9d6b;--t:#1b1b1b">
         <div class="shot"><img src="/img/5-circuit.webp" width="540" height="1080" alt="The circuits lab for Inventors" loading="lazy"></div>
         <div class="txt"><span class="age">Ages 10+</span><h3>Inventor</h3>
           <p>Real science and maths: build molecules in 3D, launch projectiles, wire circuits and balance equations.</p>
-          <ul><li>Molecules, Reactions, Launch Lab, Circuits</li><li>Pythagoras, decimals, moon phases, cells</li><li>Multi-step puzzles with a quiz after each level</li></ul></div>
+          <ul><li>Molecules, Reactions, Launch Lab, Circuits</li><li>Pythagoras, decimals, moon phases, cells</li><li>Multi-step puzzles with a quiz after each level</li><li>A hint or a "Show me" walk-through when stuck</li></ul></div>
       </article>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="sheru">
+  <div class="wrap sheru">
+    <div class="sh-img"><img src="/img/10-sheru.webp" width="540" height="960" alt="Sheru the lion in sunglasses in the discovery journal, with a wardrobe of outfits to unlock" loading="lazy"></div>
+    <div>
+      <p class="k">Meet Sheru</p>
+      <h2>A lion who cheers every discovery.</h2>
+      <p>Sheru welcomes each child to the island, gives hints and celebrates every finished level. The more a child plays, the more Sheru has to show off.</p>
+      <ul class="tick">
+        <li><b>A wardrobe to unlock.</b> Bow ties, party hats, sunglasses and more, bought with coins earned by playing.</li>
+        <li><b>Streak gifts.</b> Come back on 3, 7 and 14 days in a row for star shades, a flame mane and a rainbow. One missed day is forgiven.</li>
+        <li><b>A treasure chest every day</b>, plus a Curio of the Day challenge and a weekend mystery lab.</li>
+        <li><b>Certificates to share</b> with family when a child finishes a lab.</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -212,9 +239,9 @@ footer p{margin:0 0 8px;max-width:62em}
       <h2>Plenty to discover, and reasons to come back.</h2>
     </div>
     <div class="feats">
-      <div class="feat"><b>40+</b><span>labs across chemistry, physics, maths and biology</span></div>
+      <div class="feat"><b>57</b><span>labs across colour, chemistry, physics, maths and biology</span></div>
       <div class="feat"><b>2</b><span>languages on every screen: English and हिंदी</span></div>
-      <div class="feat"><b>Daily</b><span>Curio of the Day challenge, play streaks and a fun fact</span></div>
+      <div class="feat"><b>Daily</b><span>chest, Curio of the Day challenge, streak gifts and a fun fact</span></div>
       <div class="feat"><b>24</b><span>stickers to collect, plus bronze, silver and gold badges</span></div>
     </div>
   </div>
@@ -223,8 +250,11 @@ footer p{margin:0 0 8px;max-width:62em}
     <figure><img src="/img/2-molecules.webp" width="540" height="1080" alt="" loading="lazy"><figcaption>Build real molecules</figcaption></figure>
     <figure><img src="/img/3-explorer.webp" width="540" height="1080" alt="" loading="lazy"><figcaption>Tap, listen and play</figcaption></figure>
     <figure><img src="/img/4-tinkerer.webp" width="540" height="1080" alt="" loading="lazy"><figcaption>Guide light through mirrors</figcaption></figure>
+    <figure><img src="/img/8-plants.webp" width="540" height="960" alt="" loading="lazy"><figcaption>Match plant parts to their jobs</figcaption></figure>
+    <figure><img src="/img/9-coins.webp" width="540" height="960" alt="" loading="lazy"><figcaption>Make change with coins</figcaption></figure>
     <figure><img src="/img/5-circuit.webp" width="540" height="1080" alt="" loading="lazy"><figcaption>Wire real circuits</figcaption></figure>
     <figure><img src="/img/6-journal.webp" width="540" height="1080" alt="" loading="lazy"><figcaption>Badges and a sticker book</figcaption></figure>
+    <figure><img src="/img/11-report.webp" width="540" height="960" alt="" loading="lazy"><figcaption>A progress report for grown-ups</figcaption></figure>
     <figure><img src="/img/7-hindi.webp" width="540" height="1080" alt="" loading="lazy"><figcaption>Play in English or Hindi</figcaption></figure>
   </div>
 </section>
@@ -238,8 +268,9 @@ footer p{margin:0 0 8px;max-width:62em}
     </div>
     <div class="grid2">
       <div class="item"><h3>No accounts, no personal data from children</h3><p>Progress stays on the phone. There is no sign-up, chat or social feed.</p></div>
-      <div class="item"><h3>Child-safe ads, only at breaks</h3><p>Ads are non-personalised and rated for children. None in the first few minutes and never in the middle of a game.</p></div>
-      <div class="item"><h3>A grown-ups' corner</h3><p>Sound, voice, music, language, players and purchases sit behind a parent check.</p></div>
+      <div class="item"><h3>Child-safe ads, only at breaks</h3><p>Ads are non-personalised and rated for children. None in the first few minutes and never in the middle of a game. Watching an extra ad for a heart, a hint or bonus coins is always the child's choice.</p></div>
+      <div class="item"><h3>A grown-ups' corner</h3><p>Sound, voice, music, language, players, links and purchases sit behind a parent check.</p></div>
+      <div class="item"><h3>A progress report for each child</h3><p>See labs finished, progress in each subject, which topics your child is strongest in, which need practice, and good labs to try next. Share a summary with family.</p></div>
       <div class="item"><h3>One small purchase removes all ads</h3><p>A one-time Ad-free option, bought by a grown-up. Coins in the game are earned by playing and can never be bought.</p></div>
     </div>
     <p style="margin:24px 0 0"><a href="https://groundlearn.com/curio/privacy/" style="color:#fff;font-weight:700">Read the privacy policy</a></p>
@@ -253,6 +284,9 @@ footer p{margin:0 0 8px;max-width:62em}
       <details><summary>When can we download it?</summary><p>Curio Island is in testing on Google Play now and launches soon for Android. <a href="mailto:contactgroundlearn@gmail.com?subject=Tell%20me%20when%20Curio%20Island%20launches">Email us</a> and we'll tell you the day it's out.</p></details>
       <details><summary>Is it free?</summary><p>Yes, free to download and play, with child-safe ads at natural breaks. A one-time purchase removes all ads.</p></details>
       <details><summary>Which ages is it for?</summary><p>Four to twelve, in three bands: Explorer (4–7), Tinkerer (7–10) and Inventor (10+). Each band has its own labs, and several children can have their own player on one phone.</p></details>
+      <details><summary>Who is Sheru?</summary><p>Sheru is the lion who guides your child around the island. Sheru gives hints, cheers on every finished level and has outfits to unlock with coins earned by playing.</p></details>
+      <details><summary>How many labs are there?</summary><p>57 across colour, chemistry, physics, maths and biology, split between the three age bands. We keep adding more.</p></details>
+      <details><summary>Can I see how my child is doing?</summary><p>Yes. Behind the parent check, each player has a progress report: labs finished, progress by subject, quiz accuracy, and suggested next labs.</p></details>
       <details><summary>Does it work in Hindi?</summary><p>Yes. Every screen switches between English and Hindi, and the youngest children hear tasks read aloud in either language.</p></details>
       <details><summary>Does it need the internet?</summary><p>The labs work offline. Ads need a connection.</p></details>
       <details><summary>Is there an iPhone version?</summary><p>Not yet. Curio Island is launching on Android first.</p></details>
